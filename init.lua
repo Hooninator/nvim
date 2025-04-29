@@ -1,8 +1,7 @@
 require("config.lazy")
 require("config.treesitter")
 require("config.telescope")
-require("config.completion")
-require("config.lsp")
+require("config.coc")
 
 
 vim.opt.tabstop = 4
@@ -17,5 +16,9 @@ vim.opt.clipboard = "unnamedplus"
 
 
 
-vim.o.background = "dark" -- or "light" for light mode
 vim.cmd([[colorscheme gruvbox]])
+
+
+vim.cmd [[
+  autocmd CursorHold * silent call CocActionAsync('highlight')
+]]

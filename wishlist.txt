@@ -1,0 +1,6 @@
+coc without python type annotations
+coc without instantly suggesting completions
+
+fuzzyfinder exclude certain directories
+live md preview
+live latex preview
