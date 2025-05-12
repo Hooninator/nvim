@@ -2,6 +2,7 @@ require("config.lazy")
 require("config.treesitter")
 require("config.telescope")
 require("config.coc")
+require("config.kanagawa")
 
 
 vim.opt.tabstop = 4
@@ -16,16 +17,18 @@ vim.opt.nu = true
 vim.opt.clipboard = "unnamedplus"
 
 
-vim.cmd([[highlight Statement ctermfg=Red]])
-vim.cmd([[colorscheme retrobox]])
 vim.cmd([[set background=dark]])
 vim.cmd([[inoremap jk <esc>]])
 
 
 
-vim.cmd([[colorscheme retrobox]])
+--vim.cmd([[colorscheme retrobox]])
 --vim.cmd([[colorscheme default]])
 --vim.cmd([[colorscheme industry]])
+vim.cmd([[colorscheme kanagawa]])
+vim.cmd([[highlight! link LineNr Normal]])
+vim.cmd([[highlight! link FoldColumn Normal]])
+vim.cmd([[highlight! link SignColumn Normal]])
 
 
 vim.cmd [[

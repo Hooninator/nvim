@@ -14,5 +14,7 @@ return {
     vim.g.mkdp_filetypes = { "markdown" }
   end,
   ft = { "markdown" },
-  }
+  },
+  {"sainnhe/gruvbox-material"},
+  {"rebelot/kanagawa.nvim"}
 }
