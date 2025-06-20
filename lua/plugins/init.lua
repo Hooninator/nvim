@@ -5,7 +5,6 @@ return {
   { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
   { "lewis6991/gitsigns.nvim" },
   { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = ...},
-  { "neoclide/coc.nvim", build="npm ci", lazy=false},
   {
   "iamcco/markdown-preview.nvim",
   cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
@@ -16,5 +15,5 @@ return {
   ft = { "markdown" },
   },
   {"sainnhe/gruvbox-material"},
-  {"rebelot/kanagawa.nvim"}
+  {"rebelot/kanagawa.nvim"},
 }

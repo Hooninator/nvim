@@ -1,7 +1,9 @@
 {
       "suggest.noselect": false,
       "suggest.enablePreselect": true,
-      "pyright.inlayHints.parameterNames": "none",
+      "pyright.inlayHints.parameterNames": false,
+      "pyright.inlayHints.variableTypes": false,
+      "pyright.inlayHints.functionReturnTypes": false,
       "python.analysis.autoImportCompletions": false,
       "suggest.autoTrigger": "none"
 }

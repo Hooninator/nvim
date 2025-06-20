@@ -5,5 +5,15 @@ vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' 
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
 require("telescope").setup({
-
+	defaults = {
+    file_ignore_patterns = {
+      "node_modules/",
+      "%.git/",
+      "build/",
+      "dist/",
+      "__pycache__/",
+      "results/",
+      "env/"
+    }
+  }
 })
